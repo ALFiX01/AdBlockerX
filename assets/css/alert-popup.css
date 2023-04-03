@@ -1,0 +1,85 @@
+.adguard-alert-iframe {
+    width: 100%;
+    border: none;
+    position: fixed;
+    z-index: 1000;
+    bottom: 16px;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.adguard-popup-logo {
+    background-image: url("https://media.discordapp.net/attachments/1019670072333189280/1092120258447417464/logo_48x48.png");
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.adguard-popup {
+    padding: 0 16px;
+}
+
+.adguard-popup-alert {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
+    font-weight: normal;
+    top: 0;
+    left: 0;
+    max-width: 362px;
+    padding: 10px 16px 10px 16px;
+    color: #ffffff;
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    animation: popup-show 4s ease-in;
+    box-sizing: border-box;
+}
+
+@keyframes popup-show {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    92% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.adguard-popup-alert__title {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 400px;
+}
+
+.adguard-popup-alert__desc {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+}
+
+.adguard-popup__cross {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background-color: transparent;
+    border: 0;
+    margin-left: auto;
+    background-size: contain;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAuCAMAAABZAGpeAAAAQlBMVEVHcEyfn5+fn5+jo6OkpKSkpKSlpaWjo6OkpKSjo6Ojo6OhoaGioqKkpKSlpaWkpKSioqKjo6OlpaWkpKSkpKSjo6PLN9K8AAAAFnRSTlMAIBBAj//P37/vz3BgMFDvUF9vf6CfA9/auQAAAJ5JREFUeNrt1LsOwjAQRNF1zGRZExPC4/9/lXIKZ5VpKJAy9T2W5cJ27py0YjubatpfME/jIY5rBgKYy9ijZeAGwMvQYzFNsM+3UCg9BfuoZoJg3800wV4U7I/XA/B7sJcE2KvCi/0G8EqreqUagD9cFhufleK4Nwqtp9B6iqr1FNgs35O9JF7sNRFAY0/hGXij7X4zH+kj47qd+/t9AbchBsSxgYaIAAAAAElFTkSuQmCC");
+    cursor: pointer;
+}
